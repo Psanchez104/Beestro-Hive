@@ -1,0 +1,267 @@
+/* Universal */
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+:root{
+    --primary-color: #ffc229;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'lato', sans-serif;
+    transition: transform 0.3s ease;
+}
+
+body.show-nav{
+    transform: translateX(250px);
+}
+
+button, 
+input[type='submit'] {
+    background-color: var(--primary-color);
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
+button:focus {
+    outline: none;
+}
+
+
+/* Nav */
+
+
+nav{
+    background-color: #333;
+    border-right: 2px solid rgba(200,200,200, 0.1);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    z-index: 100;
+    transform: translateX(-100%);
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+
+nav .logo{
+    padding: 30px;
+    text-align: center;
+}
+
+nav ul{
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li{
+    border-bottom: 2px solid var(--primary-color);
+    padding: 20px;
+}
+
+nav ul li:first-of-type{
+    border-top: 2px solid var(--primary-color);
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+.toggle{
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    transition: 0.3s;
+}
+
+.toggle:hover{
+    background-color: var(--primary-color);
+    color: rgba(0,0,0,1);
+    border: 1px solid #000;
+}
+
+
+/* Landing */
+
+
+#landing{
+    background-image: linear-gradient(to right, rgba(51,51,51,0.6), rgba(51,51,51,0.6)), url(images/landing.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    position: relative;
+    height: 100vh;
+    text-align: center;
+    padding: 40px 15px;
+}
+
+#landing h1{
+    margin-top: 25vh;
+    font-size: 72px;
+    font-weight: 100;
+    letter-spacing: 10px;
+}
+
+#landing h2{
+    font-weight: 100;
+}
+
+/* Info */
+
+.info{
+    display: flex;
+    justify-content: space-around;
+    margin: 5vh 0;
+}
+.info p{
+    width: 45vw;
+    font-size: 18px;
+    line-height: 1.4em;
+}
+.info img{
+    width: 550px;
+}
+.wine h1{
+    text-align: center;
+}
+
+/* Come */
+.come{
+    background-image: linear-gradient(to right, rgba(51,51,51,0.6), rgba(51,51,51,0.6)), url(images/pastries.jpg);
+    height: 92vh;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+.come h2{
+    margin-top: 30vh;
+    font-size: 42px;
+}
+.come button{
+    color: #000;
+    font-size: 22px;
+    width: 15vw;
+    padding: 15px;
+    transition: 0.3s;
+}
+.come button:hover{
+    color: var(--primary-color);
+    background-color: #000;
+}
+
+/* Footer */
+
+footer{
+    background-color: var(--primary-color);
+    height: 8vh;
+    overflow: hidden;
+}
+footer p{
+    text-align: center;
+    margin-top: 3vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+/* Modal */
+.modal-container{
+    background-color: rgba(0,0,0,0.6);
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.modal-container.show-modal{
+    display: block;
+}
+
+.modal{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    width: 400px;
+    animation-name: modalopen;
+    animation-duration: var(--modal-duration);
+}
+
+.modal-header{
+    background: var(--primary-color);
+    color: #fff;
+    padding: 15px;
+}
+
+.modal-header h3{
+    margin: 0;
+    border-bottom: 1px solid #333;
+}
+
+.modal-content{
+    padding: 20px;
+}
+
+.modal-form div{
+    margin: 15px 0;
+}
+
+.modal-form label{
+    display: block;
+    margin-bottom:  4px;
+}
+
+.modal-form .form-input{
+    padding: 8px;
+    width: 100%;
+}
+
+.close-btn{
+    background: transparent;
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@keyframes modalopen{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

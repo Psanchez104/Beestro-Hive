@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>The Beestro Hive</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="landing">
+        <button id="toggle" class="toggle">
+            <i class="fa fa-bars fa-2x"></i>
+        </button>
+
+        <h1>BIENVENUE</h1>
+        <h2>French Wine & Cuisine</h2>
+    </section>
+
+    <div class="info">
+        <div class="wine">
+            <h1>Wine & Dine</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae eligendi ut dolor dolores obcaecati
+                asperiores molestiae quasi delectus velit facere illum, animi facilis similique officia eaque. Tenetur
+                perspiciatis voluptatum voluptatibus, molestiae nostrum, dolores ullam, earum veniam consequatur
+                delectus iusto? Sed, architecto assumenda, molestias distinctio aut quis deserunt labore dicta
+                praesentium ad officiis sapiente repudiandae soluta ab! Ullam id quo exercitationem ab, iste ex vitae
+                obcaecati beatae fuga consectetur corporis minima, quos magnam provident, ut sit. Sapiente hic,
+                exercitationem quidem voluptates corrupti officia. Excepturi similique quos distinctio voluptas.
+            </p>
+        </div>
+        <img src="images/maja-petric-vGQ49l9I4EE-unsplash.jpg" alt="">
+    </div>
+
+    <div class="come">
+        <h2>Come hang out with us</h2>
+        <button id="open">Make a reservation</button>
+    </div>
+
+    <footer>
+        <p>Content created and designed by Pablo Sanchez</p>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal-container" id="modal">
+        <div class="modal">
+            <button class="close-btn" id="close">
+                <i class="fa fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <h3>Sign Up</h3>
+            </div>
+            <div class="modal-content">
+                <p>Register with is to get offers, support and more</p>
+                <form class="modal-form">
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Enter Name" class="form-input">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter Email" class="form-input">
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter Password" class="form-input">
+                    </div>
+                    <div>
+                        <label for="password2">Confirm Password</label>
+                        <input type="password" id="password2" placeholder="Enter Password" class="form-input">
+                    </div>
+                    <input type="submit" value="Submit" class="submit-btn">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
