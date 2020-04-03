@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
         integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link rel="icon" href="images/logo.png">
     <link rel="stylesheet" href="style.css">
     <title>The Beestro Hive</title>
 </head>
@@ -18,43 +19,52 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="menu.html">Menu</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
     <section id="landing">
-        <button id="toggle" class="toggle">
-            <i class="fa fa-bars fa-2x"></i>
-        </button>
+        <div class="container">
+            <button id="toggle" class="toggle">
+                <i class="fa fa-bars fa-2x"></i>
+            </button>
 
-        <h1>BIENVENUE</h1>
-        <h2>French Wine & Cuisine</h2>
+            <h1 class="branding">The Beestro Hive</h1>
+            <h1>BIENVENUE</h1>
+            <h2>French Wine & Cuisine</h2>
+        </div>
     </section>
 
     <div class="info">
-        <div class="wine">
-            <h1>Wine & Dine</h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae eligendi ut dolor dolores obcaecati
-                asperiores molestiae quasi delectus velit facere illum, animi facilis similique officia eaque. Tenetur
-                perspiciatis voluptatum voluptatibus, molestiae nostrum, dolores ullam, earum veniam consequatur
-                delectus iusto? Sed, architecto assumenda, molestias distinctio aut quis deserunt labore dicta
-                praesentium ad officiis sapiente repudiandae soluta ab! Ullam id quo exercitationem ab, iste ex vitae
-                obcaecati beatae fuga consectetur corporis minima, quos magnam provident, ut sit. Sapiente hic,
-                exercitationem quidem voluptates corrupti officia. Excepturi similique quos distinctio voluptas.
-            </p>
+        <div class="container ">
+            <div class="wine">
+                <h1>Wine & Dine</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae eligendi ut dolor dolores obcaecati
+                    asperiores molestiae quasi delectus velit facere illum, animi facilis similique officia eaque.
+                    Tenetur
+                    perspiciatis voluptatum voluptatibus, molestiae nostrum, dolores ullam, earum veniam consequatur
+                    delectus iusto? Sed, architecto assumenda, molestias distinctio aut quis deserunt labore dicta
+                    praesentium ad officiis sapiente repudiandae soluta ab! Ullam id quo exercitationem ab, iste ex
+                    vitae
+                    obcaecati beatae fuga consectetur corporis minima, quos magnam provident, ut sit. Sapiente hic,
+                    exercitationem quidem voluptates corrupti officia. Excepturi similique quos distinctio voluptas.
+                </p>
+            </div>
+            <img src="images/maja-petric-vGQ49l9I4EE-unsplash.jpg" alt="">
         </div>
-        <img src="images/maja-petric-vGQ49l9I4EE-unsplash.jpg" alt="">
     </div>
 
     <div class="come">
-        <h2>Come hang out with us</h2>
-        <button id="open">Make a reservation</button>
+        <div class="container">
+            <h2>Come hang out with us</h2>
+            <button id="open">Make a reservation</button>
+        </div>
     </div>
 
     <footer>
-        <p>Content created and designed by Pablo Sanchez</p>
+        <p>Content created and designed by <a href="https://www.pablosanchezdeveloper.com/" target="_blank">Pablo
+                Sanchez</a></p>
     </footer>
 
     <!-- Modal -->
@@ -64,29 +74,11 @@
                 <i class="fa fa-times"></i>
             </button>
             <div class="modal-header">
-                <h3>Sign Up</h3>
+                <h3>Contact Us</h3>
             </div>
             <div class="modal-content">
-                <p>Register with is to get offers, support and more</p>
-                <form class="modal-form">
-                    <div>
-                        <label for="name">Name</label>
-                        <input type="text" id="name" placeholder="Enter Name" class="form-input">
-                    </div>
-                    <div>
-                        <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="Enter Email" class="form-input">
-                    </div>
-                    <div>
-                        <label for="password">Password</label>
-                        <input type="password" id="password" placeholder="Enter Password" class="form-input">
-                    </div>
-                    <div>
-                        <label for="password2">Confirm Password</label>
-                        <input type="password" id="password2" placeholder="Enter Password" class="form-input">
-                    </div>
-                    <input type="submit" value="Submit" class="submit-btn">
-                </form>
+                <p>To make a reservation please call us at</p>
+                <p>555-0123</p>
             </div>
         </div>
     </div>
